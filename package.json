@@ -8,11 +8,21 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "workspaces": {
+    "nohoist": [
+      "**/frontend",
+      "**/frontend/**"
+    ],
+    "packages": [
+      "api",
+      "frontend"
+    ]
+  },
   "dependencies": {
     "@next/font": "^13.0.5",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
-    "next": "13.0.2",
+    "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
